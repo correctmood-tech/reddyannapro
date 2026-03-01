@@ -33,13 +33,12 @@ body{
     display:block;
 }
 
-/* 🔥 Red border aur patla */
 .header-buttons a{
     text-decoration:none;
     color:white;
     background:#444444;
-    border:1px solid white; /* Inner white same */
-    box-shadow:0 0 0 1px #ff4d6d; /* Outer red ab aur patla */
+    border:1px solid white;
+    box-shadow:0 0 0 1px #ff4d6d;
     padding:5px 14px;
     border-radius:8px;
     margin-left:6px;
@@ -78,14 +77,22 @@ body{
     font-size:14px;
 }
 
-.options{
+/* Remember Me left */
+.remember{
     font-size:14px;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
-.options a{
+/* Forgot just above login */
+.forgot{
+    text-align:center;
+    margin-bottom:8px; /* bilkul login ke just upar */
+}
+
+.forgot a{
     color:white;
     text-decoration:none;
+    font-size:14px;
 }
 
 .btn{
@@ -95,7 +102,7 @@ body{
     border-radius:12px;
     font-weight:bold;
     font-size:15px;
-    margin-top:10px;
+    margin-top:0; /* gap control */
     cursor:pointer;
 }
 
@@ -154,13 +161,17 @@ body{
         <input type="password" placeholder="PASSWORD">
     </div>
 
-    <div class="options">
-        <input type="checkbox"> Remember Me?<br><br>
+    <div class="remember">
+        <input type="checkbox"> Remember Me?
+    </div>
+
+    <div class="forgot">
         <a href="#">Forgot Password/Username?</a>
     </div>
 
     <button class="btn btn-white">LOG IN</button>
-    <button class="btn btn-white">LOGIN WITH DEMO ID</button>
+
+    <button class="btn btn-white" style="margin-top:10px;">LOGIN WITH DEMO ID</button>
 
     <a href="#" class="whatsapp-btn">
         <i class="fa-brands fa-whatsapp"></i> WHATSAPP NOW
